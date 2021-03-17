@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  overflow-y: hidden;
 }
 
 a {
@@ -18,13 +19,55 @@ a {
   box-sizing: border-box;
 }
 .wrapper-img {
-  background: url('/graphic/homebackdrop.svg') no-repeat;
+  background: url('/graphic/homebackdrop.svg');
 }
 
 .wrap-transp {
   background: rgb(255, 255, 255, 0.5);
 }
 
-.whocard {
-  box-shadow: 16px 15px 0px #c9c9c9, 0px 0px 5px #c9c9c9;
+.whocard,
+.contmecard {
+  box-shadow: 16px 16px 0px #c9c9c9, 0px 0px 5px #c9c9c9;
+}
+
+.contme::before {
+  content: '';
+  position: absolute;
+  background: url('/contme.svg') no-repeat, #faf8ff;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.aboutme::before {
+  content: '';
+  position: absolute;
+  background: url('/aboutme.svg') no-repeat, #faf8ff;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
