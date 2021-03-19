@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Head from 'next/head'
 import Quotes from 'pages/svgs/quotes'
 import SVGCss from './svgs/svgcss'
 import SVGHtml from './svgs/svghtml'
@@ -31,6 +32,10 @@ const variants = {
 const About = () => {
   return (
     <div className="">
+      <Head>
+        <title>About</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="aboutme">
         <section className="flex max-w-screen-xl mx-auto h-full py-12">
           <motion.img

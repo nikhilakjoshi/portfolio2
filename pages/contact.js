@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Head from 'next/head'
 
 const variants = {
   visible: { opacity: 1, x: 0 },
@@ -9,6 +10,10 @@ const variants = {
 const ContactMe = () => {
   return (
     <div className="contme max-w-screen-xl mx-auto h-full py-12">
+      <Head>
+        <title>Contact Us</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <motion.form
         initial="hidden"
         animate="visible"
