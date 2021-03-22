@@ -87,7 +87,7 @@ const Card = ({ marginTop, title, icon, subtitle, img }) => {
       initial={marginTop ? 'hiddenabove' : 'hiddenbelow'}
       animate="visible"
       variants={variants}
-      className={`card whocard flex flex-col bg-cardprim p-4 xl:w-80 mr-4 xl:mr-0 my-4 rounded-md ${
+      className={`card whocard flex flex-col bg-cardprim p-4 w-72 mr-4 xl:mr-0 my-4 rounded-md ${
         marginTop ? 'xl:mt-auto' : 'xl:mb-auto'
       }`}
     >
