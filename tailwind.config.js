@@ -11,6 +11,13 @@ module.exports = {
         dang: '#E44D26',
         ligh: '#F1F1F1',
         backlight: '#faf8ff',
+        cardprim: '#948EFF',
+        cardtext: '#D4D2FF',
+        cardtext50: '#E9E8FF',
+        projects: '#6868D9',
+      },
+      zIndex: {
+        '-1': '-1',
       },
     },
   },

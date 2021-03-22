@@ -51,6 +51,10 @@ a {
   left: 0;
 }
 
+.card-wrapper {
+  height: 34rem;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

@@ -9,7 +9,7 @@ const variants = {
 
 const ContactMe = () => {
   return (
-    <div className="contme max-w-screen-xl mx-auto h-full py-12">
+    <div className="contme xl:max-w-screen-xl mx-4 xl:mx-auto h-full py-12">
       <Head>
         <title>Contact Us</title>
         <link rel="icon" href="/favicon.ico" />
@@ -19,9 +19,9 @@ const ContactMe = () => {
         animate="visible"
         variants={variants}
         action=""
-        className="text-left flex flex-col py-9 pl-16 pr-36 bg-gray-50 w-6/12 contmecard rounded-xl"
+        className="text-left flex flex-col py-9 px-6 xl:pl-16 xl:pr-36 bg-gray-50 mr-4 xl:mr-0 xl:w-6/12 contmecard rounded-xl"
       >
-        <h2 className="pt-4 pb-16 text-3xl font-bold text-primgreen">
+        <h2 className="pt-4 pb-16 text-2xl xl:text-3xl font-bold text-primgreen">
           Contact Us
         </h2>
         <label htmlFor="name" className="mb-4">
@@ -31,7 +31,7 @@ const ContactMe = () => {
           type="text"
           name="name"
           id="name"
-          className="p-3 bg-ligh rounded-lg mb-8 placeholder-gray-500 placeholder-opacity-30 focus:outline-none focus:ring focus:ring-primgreen focus:ring-opacity-50"
+          className="p-3 bg-ligh rounded-lg mb-8  placeholder-gray-500 placeholder-opacity-30 focus:outline-none focus:ring focus:ring-primgreen focus:ring-opacity-50"
           placeholder="Enter your name"
         />
         <label htmlFor="emailaddress" className="mb-4">

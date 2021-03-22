@@ -31,25 +31,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="wrapper-img flex-grow mt-48">
-        <section className="flex max-w-screen-xl mx-auto py-2">
+        <section className="xl:flex xl:max-w-screen-xl mx-4 xl:mx-auto py-2">
           <motion.div
             variants={variants}
             initial="initialLeft"
             animate="Final"
-            className="left-sec"
+            className="left-sec mb-16 xl:mb-0"
           >
-            <div className="sectext text-gray-400 tracking-wider">
+            <div className="sectext text-gray-400 tracking-wider text-xs xl:text-base">
               Power your ideas with BlueBuck Designs
             </div>
-            <motion.div className="primtext text-5xl font-bold my-10 leading-normal">
+            <motion.div className="primtext text-2xl xl:text-5xl font-bold xl:my-10 my-6 leading-normal">
               Need a complete solution to implement your ideas?
               <br />
-              <span className="text-prim">I’m your man !</span>
+              <span className="text-prim">This is the right place !</span>
             </motion.div>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex bg-prim text-white px-4 py-2 rounded-full focus:outline-none"
+              onClick={() => router.push('/projects')}
             >
               Checkout Projects
               <div className="ml-2">
@@ -61,7 +62,7 @@ export default function Home() {
             variants={variants}
             initial="initialRight"
             animate="Final"
-            className="right-sec w-full h-full"
+            className="right-sec w-full h-full my-8 xl:my-0"
           >
             <img src="/graphic/right-sec.svg" alt="" />
           </motion.div>
@@ -71,9 +72,9 @@ export default function Home() {
             variants={variants}
             initial="baseInitial"
             animate="Final"
-            className="max-w-screen-xl mx-auto flex py-12 mt-6 items-center justify-between"
+            className="xl:max-w-screen-xl xl:mx-auto mx-4 flex flex-col-reverse xl:flex-row py-12 mt-6 items-center justify-between"
           >
-            <motion.div className="flex flex-col bg-gray-50 px-6 h-48 justify-between py-6 rounded-lg relative whocard z-10">
+            <motion.div className="flex flex-col mr-4 xl:mr-0 bg-gray-50 px-6 h-48 justify-between py-6 rounded-lg relative whocard z-10">
               <h6 className="text-secprim font-bold text-lg">Nikhil Joshi</h6>
               <div className="flex items-center">
                 <motion.img
@@ -96,6 +97,7 @@ export default function Home() {
               </motion.button>
             </motion.div>
             <motion.div
+              className="hidden xl:block"
               transition={{
                 x: {
                   duration: 1,
@@ -107,7 +109,7 @@ export default function Home() {
             >
               <ArrowLeft />
             </motion.div>
-            <div className="text-2xl font-bold">
+            <div className="text-2xl font-bold mb-8 xl:mb-0">
               The who’s who of <span className="text-prim">BlueBuck</span> !
             </div>
           </motion.section>
