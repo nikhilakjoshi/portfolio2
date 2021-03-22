@@ -181,7 +181,7 @@ const NavMenu = React.forwardRef(({ setisOpen }, ref) => {
       ref={ref}
       className="absolute top-4 right-0"
     >
-      <div className="wrapper flex flex-col space-y-4 bg-cardtext50 bg-opacity-50 py-4 px-6 shadow-md font-bold rounded-md">
+      <div className="wrapper flex flex-col space-y-4 bg-cardtext50 bg-opacity-90 py-4 px-6 shadow-md font-bold rounded-md">
         <motion.div
           onClick={() => {
             router.push('/')
