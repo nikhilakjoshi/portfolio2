@@ -62,7 +62,7 @@ const Projects = () => {
             <h2 className="text-projects font-bold text-3xl pt-10">Projects</h2>
           </div>
         </div>
-        <div className="mx-4 xl:mx-auto xl:max-w-screen-xl z-10 pt-48">
+        <div className="mx-4 xl:mx-auto xl:max-w-screen-xl z-10 xl:pt-48 pt-16">
           <div className="card-wrapper flex xl:flex-row flex-col items-center xl:space-x-12 py-4 h-full">
             {projectData.map((project) => (
               <Card

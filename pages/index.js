@@ -30,7 +30,7 @@ export default function Home() {
         <title>BlueBuckDesigns</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="wrapper-img flex-grow mt-48">
+      <div className="wrapper-img flex-grow xl:mt-48 mt-16">
         <section className="xl:flex xl:max-w-screen-xl mx-4 xl:mx-auto py-2">
           <motion.div
             variants={variants}
