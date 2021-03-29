@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Head from 'next/head'
 import Loader from 'pages/common/Loader'
 import SnackBar from 'pages/common/SnackBar'
-import api from 'pages/custapi'
 
 const variants = {
   visible: { opacity: 1, x: 0 },
@@ -34,12 +33,18 @@ const ContactMe = () => {
   const handleSubmit = (e) => {
     setisLoading(true)
     e.preventDefault()
-    api
-      .sendQuery({
+    fetch('/api/mail', {
+      method: 'POST',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
         name,
         email,
         services,
-      })
+      }),
+    })
       .then((e) => {
         console.log(e)
         resetStates()
