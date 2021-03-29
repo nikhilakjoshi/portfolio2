@@ -12,3 +12,7 @@ export const sendQuery = ({ name, email, services }) => {
     })
     .then((resp) => resp.data)
 }
+
+export default {
+  sendQuery,
+}

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Head from 'next/head'
 import Loader from 'pages/common/Loader'
 import SnackBar from 'pages/common/SnackBar'
-import { sendQuery } from 'pages/custapi'
+import api from 'pages/custapi'
 
 const variants = {
   visible: { opacity: 1, x: 0 },
@@ -34,11 +34,12 @@ const ContactMe = () => {
   const handleSubmit = (e) => {
     setisLoading(true)
     e.preventDefault()
-    sendQuery({
-      name,
-      email,
-      services,
-    })
+    api
+      .sendQuery({
+        name,
+        email,
+        services,
+      })
       .then((e) => {
         console.log(e)
         resetStates()
