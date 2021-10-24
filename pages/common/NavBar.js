@@ -26,7 +26,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <nav className="flex xl:max-w-screen-xl xl:m-auto mx-4 justify-between items-center py-4 relative">
+      <nav className="flex xl:max-w-screen-xl xl:m-auto mx-4 justify-between items-center py-4">
         <motion.h3
           onClick={() => router.push('/')}
           className="text-md font-bold text-prim cursor-pointer"
@@ -76,7 +76,7 @@ const NavBar = () => {
           onClick={() => {
             router.push('/contact')
           }}
-          className="bg-gray-100 text-secprim px-3 py-2 rounded-full shadow focus:outline-none hidden xl:block"
+          className="bg-gray-100 text-secprim px-3 py-2 rounded-full shadow focus:outline-none hidden xl:block font-bold"
         >
           Contact Us
         </motion.button>
@@ -179,9 +179,9 @@ const NavMenu = React.forwardRef(({ setisOpen }, ref) => {
       transition={{ duration: 0.15 }}
       exit={{ opacity: 0, y: -10 }}
       ref={ref}
-      className="absolute top-4 right-0"
+      className="fixed z-30 flex top-0 bottom-0 right-0 w-screen h-screen bg-cardtext50"
     >
-      <div className="wrapper flex flex-col space-y-4 bg-cardtext50 bg-opacity-90 py-4 px-6 shadow-md font-bold rounded-md">
+      <div className="wrapper m-auto flex flex-col space-y-4 py-4 px-6 font-bold">
         <motion.div
           onClick={() => {
             router.push('/')

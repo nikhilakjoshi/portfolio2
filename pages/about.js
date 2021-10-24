@@ -114,11 +114,19 @@ const About = () => {
                   <h4 className="text-xl text-sec pb-4 mb-8 border-sec border-b-2">
                     The Flavors
                   </h4>
-                  <div className="flex space-x-6 justify-between xl:justify-center">
-                    <SVGReact />
-                    <SVGVue />
-                    <SVGNode />
-                    <SVGDocker />
+                  <div className="flex flex-wrap justify-between xl:justify-center w-full items-center gap-6">
+                    <div className="flex-1">
+                      <SVGReact />
+                    </div>
+                    <div className="flex-1">
+                      <SVGVue />
+                    </div>
+                    <div className="flex-1">
+                      <SVGNode />
+                    </div>
+                    <div className="flex-1">
+                      <SVGDocker />
+                    </div>
                   </div>
                 </div>
               </div>
